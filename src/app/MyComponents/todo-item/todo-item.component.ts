@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from 'src/app/Todo';
-
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-todo-item',
   templateUrl: './todo-item.component.html',
@@ -23,5 +23,5 @@ export class TodoItemComponent implements OnInit {
   onCheckboxClick(todo: any){
     this.todoCheckbox.emit(todo);
   }
-
+  faTimes = faTimes;
 }
